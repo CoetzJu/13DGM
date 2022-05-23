@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+/* Borders will be commented out from the structure faze*/
 
 body{
     margin-top: 0%;
@@ -15,20 +16,25 @@ body{
     overflow: hidden;
     width: 100%;
     height: 13vh;
+    
     border-style: solid;
     border-width: 0.2em;
     border-color: pink;
+    
     background-color: gray;
+    /* Colour for theme 2 #3BD9F5*/
     box-sizing: border-box;
 }
 
 #logo{
     width: 10%;
     height: 100%;
+    
     border-style: solid;
     border-width: 0.3em;
     border-color: green;
     background-color: gray;
+    
     float: left;
     box-sizing: border-box;
 }
@@ -36,10 +42,12 @@ body{
 #title{
     width: 70%;
     height: 100%;
+    
     border-style: solid;
     border-width: 0.3em;
     border-color: blue;
     background-color: gray;
+    
     float: left;
     box-sizing: border-box;
     text-align: center;
@@ -48,10 +56,12 @@ body{
 #darkmode{
     width: 10%;
     height: 100%;
+    
     border-style: solid;
     border-width: 0.3em;
     border-color: yellow;
     background-color: gray;
+    
     float: left;
     box-sizing: border-box;
 }
