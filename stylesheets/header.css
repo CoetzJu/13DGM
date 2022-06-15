@@ -82,6 +82,18 @@ body{
     box-sizing: border-box;
 }
 
+#dark-mode-button{
+    border-radius: 50%;
+    border-color: #4369FA;
+    background-color: #4369FA;
+    transition-duration: 1.4s;
+}
+
+#dark-mode-button:hover{
+    background-color: #1b3ec9;
+    /*border-color: black;*/
+}
+
 #mode{
     width: 10%;
     height: 100%;
@@ -91,6 +103,18 @@ body{
     background-color: #4369FA;
     float: left;
     box-sizing: border-box;
+}
+
+#mode-button{
+    border-radius: 50%;
+    border-color: #4369FA;
+    background-color: #4369FA;
+    transition-duration: 1.4s;
+}
+
+#mode-button:hover{
+    background-color: #1b3ec9;
+    /*border-color: black;*/
 }
 
 .navbar{
