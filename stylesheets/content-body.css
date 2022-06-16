@@ -207,3 +207,11 @@
     font-size: 1.2em;
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#header{
+  border: 0px;
+}
+
+#content-table{
+  border: 0px;
+}

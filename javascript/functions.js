@@ -4,10 +4,10 @@
 // as they are experimented methods to do functions.
 // Some worked better then others, or they did not work.
 
+window.onload = checkDarkMode();
 // Slideshow
 var slideIndex = 0;
 carousel();
-
 function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -26,6 +26,13 @@ function Darkmode() {
   /*const myElement =  document.getElementById("page");
   myElement.style.color = "red";*/
   element.classList.toggle("dark-mode");
+  element.classList.toggle("test-mode");
+  localStorage.setItem('dark-mode-enabled',true);
+}
+
+function checkDarkMode(){
+  let myMode = localStorage.getItem('dark-mode-enabled');
+  console.log(myMode)
 }
 
 // Experamental JS

@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Webpage</title>
-    <link rel="stylesheet" href="stylesheets/header.css">
-    <link rel="stylesheet" href="stylesheets/body.css">
-    <script src="javascript/functions.js"></script>
+    <title>Lessons</title>
+    <link rel="stylesheet" href="../stylesheets/header.css">
+    <link rel="stylesheet" href="../stylesheets/content-body.css">
+    <script src="../javascript/functions.js"></script>
 
 </head>
 <body>
@@ -19,7 +19,7 @@
             <!--This logo will have an image and a link as it also acts as a link-->
             <!--This will be a home button-->
 
-            <p>logo</p>
+            <a href="../index.html">logo</a>
 
         </div>
 
@@ -33,13 +33,13 @@
             <!--This will change the theme for dark and light mode-->
             <!--Check javascript for the rest of the code-->
 
-            <button onclick="Darkmode()" id="dark-mode-button" class="center"><img src="images/processed/icons/Moon-icon.png" alt="Moon"></button>
+            <button onclick="Darkmode()" id="dark-mode-button" class="center"><img src="../images/processed/icons/Moon-icon.png" alt="Moon"></button>
 
         </div>
 
         <div id="mode">
             <!--This will change the mode between teacher and student-->
-            <button id="mode-button" class="center"><img src="images/processed/icons/Student-Icon.png" alt="Student"></button>
+            <button id="mode-button" class="center"><img src="../images/processed/icons/Student-Icon.png" alt="Student"></button>
 
         </div>
 
@@ -51,11 +51,11 @@
 
         <a>Lessons</a>
 
-        <a>Tutorials</a>
+        <a href="pages/tutorials">Tutorials</a>
 
-        <a>Micro:bits</a>
+        <a href="pages/microbits">Micro:bits</a>
 
-        <a>Contacts</a>
+        <a href="pages/contacts">Contacts</a>
 
     </div>
 
@@ -80,15 +80,15 @@
 
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
-            <img src="images/processed/slideshow/Car.png" style="width:100%">
+            <img src="../images/processed/slideshow/Car.png" style="width:100%">
           </div>
 
           <div class="mySlides fade">
-            <img src="images/processed/slideshow/Name.jpg" style="width:100%">
+            <img src="../images/processed/slideshow/Name.jpg" style="width:100%">
           </div>
 
           <div class="mySlides fade">
-            <img src="images/processed/slideshow/Smile.jpg" style="width:100%">
+            <img src="../images/processed/slideshow/Smile.jpg" style="width:100%">
           </div>
 
           <!-- Next and previous buttons
@@ -104,11 +104,11 @@
           <span class="dot" onclick="currentSlide(3)"></span>
         </div> -->
 
-        <script src="javascript/functions.js"></script>
+        <script src="../javascript/functions.js"></script>
 
         <div id="sign-up">
 
-            <img id="image" style="width: 100%;" src="images/processed/content/Join.jpg">
+            <img id="image" style="width: 100%;" src="../images/processed/content/Join.jpg">
 
          </div>
 
@@ -117,28 +117,36 @@
     <div class="low-profile">
         <!--This is where all the main content will be. This includes text and images.-->
         <!--This is handled with the body stylesheet-->
+        <!--https://www.w3schools.com/html/html_tables.asp-->
 
-        <div id="image">
+        <div id="header">
 
-            <img class="center" style="width: 99%; margin-top: 0%;" src="images/processed/content/microbit3V.png">
+            <p>Lessons</p>
 
         </div>
 
-        <div id="text">
+        <div id="content-table">
 
-            <p>Lorem ipsum dolor sit amet. Eum molestiae perferendis est voluptas accusamus est iure ipsam et sunt iure. Eos inventore eligendi qui galisum eaque vel autem modi nam quasi perspiciatis in aliquid exercitationem id omnis harum. Eum nulla doloremque est voluptatem nostrum sit odit eius qui natus voluptas qui velit nostrum ad sunt voluptatem. At ducimus voluptas ad assumenda culpa ea beatae facere ut laudantium dolor ea necessitatibus soluta ea voluptatem distinctio.
-
-                Qui placeat quae sit aliquam fugit aut enim laborum aut debitis explicabo vel iste illo et mollitia modi? Eum cupiditate reprehenderit et ducimus adipisci ab enim adipisci et aspernatur excepturi id velit earum et autem eligendi.
+            <table>
                 
-                Ut quidem excepturi qui officiis officia aut rerum perferendis et reiciendis sunt. Non deleniti mollitia hic adipisci fugiat quo sunt maiores ut nihil provident. 33 mollitia voluptatibus aut Quis fuga ut esse labore aut expedita corrupti et molestiae voluptatem.</p>
+                <tr>
+
+                    <th><img src="../images/processed/content/Join.jpg" alt=""></th>
+
+                    <th><p>eofjsoifjoiesjf</p></th>
+
+                </tr>
+
+            </table>
 
         </div>
+        <!--<table>
+            <tr>
+                <th><img src="../images/processed/content/Join.jpg" alt=""></th>
+                <th><p>soigjrdjdogijodijgoidjgoidjfoisdjgoisj</p></th>
+            </tr>
+        </table>-->
 
-        <div id="image">
-
-            <img class="center" style="width: 99%; margin-top: 0%;" src="images/processed/content/microbitGND.png">
-
-        </div>
     </div>
 </body>
 </html>
