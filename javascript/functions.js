@@ -20,6 +20,28 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
+//Function for Mode Select
+function modeChange() {
+  var element = document.body;
+  
+  element.classList.toggle("header-teacher.css");
+}
+
+function toggleTheme() {
+  // Obtains an array of all <link>
+  // elements.
+  // Select your element using indexing.
+  var theme = document.getElementsByTagName('link')[0];
+
+  // Change the value of href attribute 
+  // to change the css sheet.
+  if (theme.getAttribute('href') == '../stylesheets/header.css') {
+      theme.setAttribute('href', '../stylesheets/header-teacher.css');
+  } else {
+      theme.setAttribute('href', '../stylesheets/header.css');
+  }
+}
+
 // This is a function for darkmode
 function Darkmode() {
   var element = document.body;

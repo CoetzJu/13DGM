@@ -39,7 +39,7 @@
 
         <div id="mode">
             <!--This will change the mode between teacher and student-->
-            <button id="mode-button" class="center"><img src="../images/processed/icons/Student-Icon.png" alt="Student"></button>
+            <button onclick="toggleTheme()" id="mode-button" class="center"><img src="../images/processed/icons/Student-Icon.png" alt="Student"></button>
 
         </div>
 
@@ -121,13 +121,14 @@
 
         <div id="header">
 
-            <p>Lessons</p>
+            <!--Make new ID for this-->
+            <p id="header-content">Lessons</p>
 
         </div>
 
         <div id="content-table">
 
-            <table>
+            <table id="table-style">
                 
                 <tr>
 
@@ -140,7 +141,8 @@
             </table>
 
         </div>
-        <!--<table>
+        <!-- Table template
+            <table>
             <tr>
                 <th><img src="../images/processed/content/Join.jpg" alt=""></th>
                 <th><p>soigjrdjdogijodijgoidjgoidjfoisdjgoisj</p></th>

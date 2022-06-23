@@ -14,9 +14,9 @@ body{
     margin: auto;
 }
 
-.test-mode {
-    font-size: large;
-}
+/*.test-mode {
+    font-size: ;
+}*/
 
 .dark-mode {
     background-color: #545454;
@@ -86,6 +86,7 @@ body{
 }
 
 #dark-mode-button{
+    border: none;
     border-radius: 50%;
     border-color: #4369FA;
     background-color: #4369FA;
@@ -109,6 +110,7 @@ body{
 }
 
 #mode-button{
+    border: none;
     border-radius: 50%;
     border-color: #4369FA;
     background-color: #4369FA;
