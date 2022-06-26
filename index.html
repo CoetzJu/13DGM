@@ -9,6 +9,7 @@
     <title>Webpage</title>
     <link rel="stylesheet" href="stylesheets/header.css">
     <link rel="stylesheet" href="stylesheets/body.css">
+    <link rel="stylesheet" href="stylesheets/light-theme.css">
     <script src="javascript/functions.js"></script>
 
 </head>
@@ -39,7 +40,7 @@
 
         <div id="mode">
             <!--This will change the mode between teacher and student-->
-            <button id="mode-button" class="center"><img src="images/processed/icons/Student-Icon.png" alt="Student"></button>
+            <button onclick="mainToggleTheme()" id="mode-button" class="center"><img src="images/processed/icons/Student-Icon.png" alt="Student"></button>
 
         </div>
 
@@ -103,7 +104,22 @@
           <span class="dot" onclick="currentSlide(3)"></span>
         </div> -->
 
-        <script src="javascript/functions.js"></script>
+        <script>
+            var slideIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var slideDeck = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slideDeck.length; i++) {
+                    slideDeck[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slideDeck.length) {slideIndex = 1}
+                slideDeck[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+                console.log(slideDeck);
+            }
+        </script>
 
         <div id="sign-up">
 

@@ -1,11 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-.dark-mode {
-  background-color: #23272A;
-  color: white;
-}
-
 .high-profile{
     resize: none;
     overflow: hidden;

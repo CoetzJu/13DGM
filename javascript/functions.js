@@ -5,20 +5,21 @@
 // Some worked better then others, or they did not work.
 
 window.onload = checkDarkMode();
-// Slideshow
-var slideIndex = 0;
+
+// Slideshow javascript has been put into the HTML directly to avoid error
+/*var slideIndex = 0;
 carousel();
 function carousel() {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  var slideDeck = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slideDeck.length; i++) {
+    slideDeck[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
+  if (slideIndex > slideDeck.length) {slideIndex = 1}
+  slideDeck[slideIndex-1].style.display = "block";
   setTimeout(carousel, 2000); // Change image every 2 seconds
-}
+}*/
 
 //Function for Mode Select
 function modeChange() {
@@ -42,6 +43,54 @@ function toggleTheme() {
   }
 }
 
+// There is a main toggle as this refers to the index page
+// where the other toggle handes the rest of the pages
+
+function mainToggleTheme() {
+  // Obtains an array of all <link>
+  // elements.
+  // Select your element using indexing.
+  var theme = document.getElementsByTagName('link')[0];
+
+  // Change the value of href attribute 
+  // to change the css sheet.
+  if (theme.getAttribute('href') == 'stylesheets/header.css') {
+      theme.setAttribute('href', 'stylesheets/header-teacher.css');
+  } else {
+      theme.setAttribute('href', 'stylesheets/header.css');
+  }
+}
+
+function toggleMode() {
+  // Obtains an array of all <link>
+  // elements.
+  // Select your element using indexing.
+  var theme = document.getElementsByTagName('link')[0];
+
+  // Change the value of href attribute 
+  // to change the css sheet.
+  if (theme.getAttribute('href') == '../stylesheets/light-theme.css') {
+      theme.setAttribute('href', '../stylesheets/dark-theme.css');
+  } else {
+      theme.setAttribute('href', '../stylesheets/light-theme.css');
+  }
+}
+
+function mainToggleMode() {
+  // Obtains an array of all <link>
+  // elements.
+  // Select your element using indexing.
+  var theme = document.getElementsByTagName('link')[0];
+
+  // Change the value of href attribute 
+  // to change the css sheet.
+  if (theme.getAttribute('href') == 'stylesheets/light-theme.css') {
+      theme.setAttribute('href', 'stylesheets/dark-theme.css');
+  } else {
+      theme.setAttribute('href', 'stylesheets/light-theme.css');
+  }
+}
+
 // This is a function for darkmode
 function Darkmode() {
   var element = document.body;
@@ -57,20 +106,28 @@ function checkDarkMode(){
   console.log(myMode)
 }
 
+// Local Storage TESTING
+// https://www.w3schools.com/jsref/prop_win_localstorage.asp
+localStorage.setItem("TEST", "This is a local storage Test");
+localStorage.getItem("TEST");
+
+// Javascript cookies
+//https://www.w3schools.com/js/js_cookies.asp
+
 // Experamental JS
 // Text swapping
-function myFunction() {
+/*function myFunction() {
   var x = document.getElementById("myDIV");
   if (x.innerHTML === "Hello") {
     x.innerHTML = "Swapped text!";
   } else {
     x.innerHTML = "Hello";
   }
-}
+}*/
 
 //For saving the dark-mode between pages
 // https://stackoverflow.com/questions/71198296/keep-dark-or-light-mode-over-different-pages-with-javascript
-checkbox.addEventListener( 'change', function() {
+/*checkbox.addEventListener( 'change', function() {
   localStorage.setItem('dark',this.checked);
   if(this.checked) {
        body.classList.add('dark')
@@ -81,4 +138,4 @@ checkbox.addEventListener( 'change', function() {
 
 if(localStorage.getItem('dark')) {
   body.classList.add('dark');
-}
+}*/
