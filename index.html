@@ -11,9 +11,33 @@
     <link rel="stylesheet" href="stylesheets/body.css">
     <link rel="stylesheet" href="stylesheets/light-theme.css">
     <script src="javascript/functions.js"></script>
+    <script>
+     // Cookie template that I found
+     // https://stackoverflow.com/questions/16842226/setting-multiple-cookies-in-javascript#:~:text=To%20set%20more%20than%20one,to%20add%20more%20different%20cookies
+    /*var n=1;
+    function addCookie(){
+    document.cookie=n+"="+n;n++;
+    }
+
+    function ListCookies(){
+    var result = document.cookie;
+    document.getElementById("p").innerHTML=result;
+    }
+
+    function removeCookies(){
+    //document.cookie="";
+    var result = document.cookie;
+    var cookieArray = result.split(";");
+        for(var i=0;i<cookieArray.length;i++){
+            var keyValArr = cookieArray[i].split("=");
+            document.cookie=keyValArr[0]+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        }
+    }*/
+
+</script>
 
 </head>
-<body onload="checkDarkMode()">
+<body>
     <div class="header">
 
         <div id="logo">
@@ -34,7 +58,7 @@
             <!--This will change the theme for dark and light mode-->
             <!--Check javascript for the rest of the code-->
 
-            <button onclick="Darkmode()" id="dark-mode-button" class="center"><img src="images/processed/icons/Moon-icon.png" alt="Moon"></button>
+            <button onclick="mainToggleMode()" id="dark-mode-button" class="center"><img src="images/processed/icons/Moon-icon.png" alt="Moon"></button>
 
         </div>
 

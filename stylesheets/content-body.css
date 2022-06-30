@@ -230,6 +230,12 @@
   border: 0px;
 }
 
-#table-style {
-  
+.table-style {
+  width: 100%;
+}
+
+#border{
+  border-color: black;
+  border-width: 1.2em;
+  border-style: solid;
 }

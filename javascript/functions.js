@@ -65,7 +65,7 @@ function toggleMode() {
   // Obtains an array of all <link>
   // elements.
   // Select your element using indexing.
-  var theme = document.getElementsByTagName('link')[0];
+  var mode = document.getElementsByTagName('link')[0];
 
   // Change the value of href attribute 
   // to change the css sheet.
@@ -75,6 +75,22 @@ function toggleMode() {
       theme.setAttribute('href', '../stylesheets/light-theme.css');
   }
 }
+
+//function mainToggleMode() {
+  // Obtains an array of all <link>
+  // elements.
+  // Select your element using indexing.
+//  var theme = document.getElementsByTagName('link')[0];
+//  var save  = "on";
+  // Change the value of href attribute 
+  // to change the css sheet.
+//  if (theme.getAttribute('href') == 'stylesheets/light-theme.css') {
+//      theme.setAttribute('href', 'stylesheets/dark-theme.css');
+//  } else {
+//      theme.setAttribute('href', 'stylesheets/light-theme.css');
+//  }
+//  localStorage.setItem("darkModeStorage", save);// This saves the 
+//}
 
 function mainToggleMode() {
   // Obtains an array of all <link>
@@ -98,18 +114,20 @@ function Darkmode() {
   myElement.style.color = "red";*/
   element.classList.toggle("dark-mode");
   element.classList.toggle("test-mode");
-  localStorage.setItem('dark-mode-enabled',true);
+  localStorage.setItem('dark-mode-enabled',"yes");
 }
 
 function checkDarkMode(){
-  let myMode = localStorage.getItem('dark-mode-enabled');
-  console.log(myMode)
+  var cheese = localStorage.getItem("darkModeStorage");
+  if (cheese === "on"){
+  }
+  else JSON.parse(cheese);
 }
 
 // Local Storage TESTING
 // https://www.w3schools.com/jsref/prop_win_localstorage.asp
-localStorage.setItem("TEST", "This is a local storage Test");
-localStorage.getItem("TEST");
+//localStorage.setItem("TEST", "This is a local storage Test");
+//localStorage.getItem("TEST");
 
 // Javascript cookies
 //https://www.w3schools.com/js/js_cookies.asp

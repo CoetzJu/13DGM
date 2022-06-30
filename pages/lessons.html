@@ -13,7 +13,7 @@
     <script src="../javascript/functions.js"></script>
 
 </head>
-<body>
+<body  onload="checkDarkMode()">
     <div class="header">
 
         <div id="logo">
@@ -34,7 +34,7 @@
             <!--This will change the theme for dark and light mode-->
             <!--Check javascript for the rest of the code-->
 
-            <button onclick="Darkmode()" id="dark-mode-button" class="center"><img src="../images/processed/icons/Moon-icon.png" alt="Moon"></button>
+            <button onclick="toggleMode()" id="dark-mode-button" class="center"><img src="../images/processed/icons/Moon-icon.png" alt="Moon"></button>
 
         </div>
 
@@ -144,13 +144,13 @@
 
         <div id="content-table">
 
-            <table id="table-style">
+            <table class="table-style" id="border">
                 
-                <tr>
+                <tr id="border">
 
-                    <th><img src="../images/processed/content/Join.jpg" alt=""></th>
+                    <th class="table-sizing" id="border"><img src="../images/processed/content/Join.jpg" alt=""></th>
 
-                    <th><p>eofjsoifjoiesjf</p></th>
+                    <th class="table-sizing" id="border"><p>eofjsoifjoiesjf</p></th>
 
                 </tr>
 
