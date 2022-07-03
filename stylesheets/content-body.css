@@ -210,28 +210,24 @@
 
 /* ASK MR JESSOP ABOUT USING MULTIPLE CLASSES AT THE SAME TIME*/
 
-#header{
-  border: 0.2em;
-  border-style: solid;
-  border-color: black;
-  width: 100%;
-  height: 10%;
-  background-color: #4369FA;
-}
-
-#header-content{
-  margin: 0.25% 0.25%;
-  text-align: center;
-  font-size: 1.2em;
-  font-family:  Verdana, Geneva, Tahoma, sans-serif;
-}
-
 #content-table{
   border: 0px;
 }
+.table-style{
+  width:100%;
+  margin:auto;
+}
 
-.table-style {
-  width: 100%;
+.table-image {
+  width: 10%;
+
+}
+.table-sizing {
+  width:20%;
+}
+#table-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #border{

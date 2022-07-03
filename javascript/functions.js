@@ -32,40 +32,27 @@ function toggleTheme() {
   // Obtains an array of all <link>
   // elements.
   // Select your element using indexing.
-  var theme = document.getElementsByTagName('link')[0];
+  var theme2 = document.getElementsByTagName('link')[1];
 
   // Change the value of href attribute 
   // to change the css sheet.
-  if (theme.getAttribute('href') == '../stylesheets/header.css') {
-      theme.setAttribute('href', '../stylesheets/header-teacher.css');
+  if (theme2.getAttribute('href') == '../stylesheets/header.css') {
+      theme2.setAttribute('href', '../stylesheets/header-teacher.css');
   } else {
-      theme.setAttribute('href', '../stylesheets/header.css');
+      theme2.setAttribute('href', '../stylesheets/header.css');
   }
 }
 
 // There is a main toggle as this refers to the index page
 // where the other toggle handes the rest of the pages
 
-function mainToggleTheme() {
-  // Obtains an array of all <link>
-  // elements.
-  // Select your element using indexing.
-  var theme = document.getElementsByTagName('link')[0];
 
-  // Change the value of href attribute 
-  // to change the css sheet.
-  if (theme.getAttribute('href') == 'stylesheets/header.css') {
-      theme.setAttribute('href', 'stylesheets/header-teacher.css');
-  } else {
-      theme.setAttribute('href', 'stylesheets/header.css');
-  }
-}
 
 function toggleMode() {
   // Obtains an array of all <link>
   // elements.
   // Select your element using indexing.
-  var mode = document.getElementsByTagName('link')[0];
+  var theme = document.getElementsByTagName('link')[0];
 
   // Change the value of href attribute 
   // to change the css sheet.
@@ -96,6 +83,7 @@ function mainToggleMode() {
   // Obtains an array of all <link>
   // elements.
   // Select your element using indexing.
+  console.log(1);
   var theme = document.getElementsByTagName('link')[0];
 
   // Change the value of href attribute 
@@ -104,6 +92,22 @@ function mainToggleMode() {
       theme.setAttribute('href', 'stylesheets/dark-theme.css');
   } else {
       theme.setAttribute('href', 'stylesheets/light-theme.css');
+  }
+}
+
+function mainToggleTheme() {
+  console.log(2);
+  // Obtains an array of all <link>
+  // elements.
+  // Select your element using indexing.
+  var theme2 = document.getElementsByTagName('link')[1];
+
+  // Change the value of href attribute 
+  // to change the css sheet.
+  if (theme2.getAttribute('href') == 'stylesheets/header.css') {
+      theme2.setAttribute('href', 'stylesheets/header-teacher.css');
+  } else {
+      theme2.setAttribute('href', 'stylesheets/header.css');
   }
 }
 
@@ -123,6 +127,12 @@ function checkDarkMode(){
   }
   else JSON.parse(cheese);
 }
+
+//This is for Text change
+//https://stackoverflow.com/questions/48664368/change-text-on-the-click-of-a-button-javascript
+
+
+
 
 // Local Storage TESTING
 // https://www.w3schools.com/jsref/prop_win_localstorage.asp

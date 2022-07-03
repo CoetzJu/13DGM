@@ -1,6 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 body{
+    margin-top: 0%;
+    overflow: hidden;
     background-color: #f5f5f5;
     color: black;
+    transition-duration: 1.4s;
+    max-width: 1920px;
+    height: 100vh;
+    margin: auto;
 }

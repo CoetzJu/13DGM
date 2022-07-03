@@ -4,16 +4,6 @@
 
 /* Look back as the W3 schools for the list and remeber to outline the rest of the page and other images */
 
-body{
-    margin-top: 0%;
-    overflow: hidden;
-    background-color: #F5F5F5;
-    transition-duration: 1.4s;
-    max-width: 1920px;
-    height: 100vh;
-    margin: auto;
-}
-
 /*.test-mode {
     font-size: ;
 }*/
@@ -156,4 +146,21 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
+  }
+
+  #header{
+    border: 0.2em;
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+    height: 10%;
+    background-color: #4369FA;
+    margin-bottom: 5%;
+  }
+  
+  #header-content{
+    margin: 0.25% 0.25%;
+    text-align: center;
+    font-size: 1.2em;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
   }

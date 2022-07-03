@@ -4,16 +4,6 @@
 
 /* Look back as the W3 schools for the list and remeber to outline the rest of the page and other images */
 
-body{
-    margin-top: 0%;
-    overflow: hidden;
-    background-color: #F5F5F5;
-    transition-duration: 1.4s;
-    max-width: 1920px;
-    height: 100vh;
-    margin: auto;
-}
-
 /*.test-mode {
     font-size: ;
 }*/
@@ -38,7 +28,7 @@ body{
     border-width: 0.2em;
     border-color: black;
     
-    background-color: red;
+    background-color: #7198FA;
     /* Colour for theme 2 #15C8E6*/
     /* Colour for theme 1 #334AFA*/
     box-sizing: border-box;
@@ -50,8 +40,8 @@ body{
     
     border-style: solid;
     border-width: 0.3em;
-    border-color: #4369FA;
-    background-color: red;
+    border-color: #7198FA;
+    background-color: #7198FA;
     
     float: left;
     box-sizing: border-box;
@@ -63,8 +53,8 @@ body{
     
     border-style: solid;
     border-width: 0.3em;
-    border-color: #4369FA;
-    background-color: red;
+    border-color: #7198FA;
+    background-color: #7198FA;
     
     float: left;
     box-sizing: border-box;
@@ -78,8 +68,8 @@ body{
     
     border-style: solid;
     border-width: 0.3em;
-    border-color: red;
-    background-color: red;
+    border-color: #7198FA;
+    background-color: #7198FA;
     
     float: left;
     box-sizing: border-box;
@@ -88,13 +78,13 @@ body{
 #dark-mode-button{
     border: none;
     border-radius: 50%;
-    border-color: #4369FA;
-    background-color: red;
+    border-color: #7198FA;
+    background-color: #7198FA;
     transition-duration: 1.4s;
 }
 
 #dark-mode-button:hover{
-    background-color: #1b3ec9;
+    background-color: #7668ED;
     /*border-color: black;*/
 }
 
@@ -103,8 +93,8 @@ body{
     height: 100%;
     border-style: solid;
     border-width: 0.3em;
-    border-color: #4369FA;
-    background-color: red;
+    border-color: #7198FA;
+    background-color: #7198FA;
     float: left;
     box-sizing: border-box;
 }
@@ -112,13 +102,13 @@ body{
 #mode-button{
     border: none;
     border-radius: 50%;
-    border-color: #4369FA;
-    background-color: red;
+    border-color: #7198FA;
+    background-color: #7198FA;
     transition-duration: 1.4s;
 }
 
 #mode-button:hover{
-    background-color: #1b3ec9;
+    background-color: #7668ED;
     /*border-color: black;*/
 }
 
@@ -131,7 +121,7 @@ body{
     border-width: 0.2em;
     border-top: 0px;
     border-color: black;
-    background-color: red;
+    background-color: #7198FA;
     box-sizing: border-box;
 }
 
@@ -143,12 +133,12 @@ body{
     text-align: center;
     text-decoration: none;
     color: black;
-    background-color: red;
+    background-color: #7198FA;
     transition-duration: 0.5s;
 }
 
 .navbar a:hover{
-    background-color: #1b3ec9;
+    background-color: #7668ED;
     transition-duration: 0.5s;
 }
 
@@ -166,4 +156,21 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
+  }
+
+  #header{
+    border: 0.2em;
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+    height: 10%;
+    background-color: #7198FA;
+    margin-bottom: 1.25%;
+  }
+  
+  #header-content{
+    margin: 0.25% 0.25%;
+    text-align: center;
+    font-size: 1.2em;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
   }
