@@ -2,10 +2,8 @@
 /* CSS Document */
 body{
     margin-top: 0%;
-    overflow: hidden;
     background-color: #23272A ;
     color: white;
-    transition-duration: 1.4s;
     max-width: 1920px;
     height: 100vh;
     margin: auto;

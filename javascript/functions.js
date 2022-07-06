@@ -4,7 +4,7 @@
 // as they are experimented methods to do functions.
 // Some worked better then others, or they did not work.
 
-window.onload = checkDarkMode();
+
 
 // Slideshow javascript has been put into the HTML directly to avoid error
 /*var slideIndex = 0;
@@ -38,8 +38,10 @@ function toggleTheme() {
   // to change the css sheet.
   if (theme2.getAttribute('href') == '../stylesheets/header.css') {
       theme2.setAttribute('href', '../stylesheets/header-teacher.css');
+      localStorage.setItem('themeData', '1');
   } else {
       theme2.setAttribute('href', '../stylesheets/header.css');
+      localStorage.setItem('themeData', '0');
   }
 }
 
@@ -58,26 +60,12 @@ function toggleMode() {
   // to change the css sheet.
   if (theme.getAttribute('href') == '../stylesheets/light-theme.css') {
       theme.setAttribute('href', '../stylesheets/dark-theme.css');
+      localStorage.setItem('darkData', '1');
   } else {
       theme.setAttribute('href', '../stylesheets/light-theme.css');
+      localStorage.setItem('darkData', '0');
   }
 }
-
-//function mainToggleMode() {
-  // Obtains an array of all <link>
-  // elements.
-  // Select your element using indexing.
-//  var theme = document.getElementsByTagName('link')[0];
-//  var save  = "on";
-  // Change the value of href attribute 
-  // to change the css sheet.
-//  if (theme.getAttribute('href') == 'stylesheets/light-theme.css') {
-//      theme.setAttribute('href', 'stylesheets/dark-theme.css');
-//  } else {
-//      theme.setAttribute('href', 'stylesheets/light-theme.css');
-//  }
-//  localStorage.setItem("darkModeStorage", save);// This saves the 
-//}
 
 function mainToggleMode() {
   // Obtains an array of all <link>
@@ -90,8 +78,10 @@ function mainToggleMode() {
   // to change the css sheet.
   if (theme.getAttribute('href') == 'stylesheets/light-theme.css') {
       theme.setAttribute('href', 'stylesheets/dark-theme.css');
+      localStorage.setItem('darkData', '1');
   } else {
       theme.setAttribute('href', 'stylesheets/light-theme.css');
+      localStorage.setItem('darkData', '0');
   }
 }
 
@@ -111,11 +101,25 @@ function mainToggleTheme() {
   }
 }
 
-// This is a function for darkmode
-function Darkmode() {
+function darkmodeData() {
+  var dData = localStorage.getItem('darkData');
+  if (dData == '1'){
+    toggleMode();
+  }
+}
+
+function mainDarkmodeData() {
+  var dData = localStorage.getItem('darkData');
+  if (dData == '1'){
+    mainToggleMode();
+  }
+}
+
+// This was a function for darkmode
+/*function Darkmode() {
   var element = document.body;
   /*const myElement =  document.getElementById("page");
-  myElement.style.color = "red";*/
+  myElement.style.color = "red";
   element.classList.toggle("dark-mode");
   element.classList.toggle("test-mode");
   localStorage.setItem('dark-mode-enabled',"yes");
@@ -127,7 +131,7 @@ function checkDarkMode(){
   }
   else JSON.parse(cheese);
 }
-
+*/
 //This is for Text change
 //https://stackoverflow.com/questions/48664368/change-text-on-the-click-of-a-button-javascript
 

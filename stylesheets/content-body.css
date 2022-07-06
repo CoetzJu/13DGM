@@ -163,7 +163,6 @@
 
 .low-profile{
   resize: none;
-  overflow: hidden;
   width: 100%;
   height: 40vh;
   /*border-style: solid;*/
@@ -210,28 +209,16 @@
 
 /* ASK MR JESSOP ABOUT USING MULTIPLE CLASSES AT THE SAME TIME*/
 
-#content-table{
+#content-layout{
   border: 0px;
-}
-.table-style{
-  width:100%;
-  margin:auto;
-}
-
-.table-image {
-  width: 10%;
+  width: 100%;
+  height: 80%;
 
 }
-.table-sizing {
-  width:20%;
-}
-#table-center {
-  margin-left: auto;
-  margin-right: auto;
-}
 
-#border{
-  border-color: black;
-  border-width: 1.2em;
-  border-style: solid;
+#content-sizing{
+  width: 16.6666666667%;
+  height: 100%;
+  box-sizing: border-box;
+  float: left;
 }
