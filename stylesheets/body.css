@@ -67,9 +67,15 @@
 
 .centered-image-text {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#sign-up-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4em;
+  width: 100%;
 }
 
 #hyperlink-color:link {

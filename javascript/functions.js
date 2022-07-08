@@ -28,6 +28,24 @@ function modeChange() {
   element.classList.toggle("header-teacher.css");
 }
 
+function mainToggleTheme() {
+  console.log(2);
+  // Obtains an array of all <link>
+  // elements.
+  // Select your element using indexing.
+  var theme2 = document.getElementsByTagName('link')[1];
+
+  // Change the value of href attribute 
+  // to change the css sheet.
+  if (theme2.getAttribute('href') == 'stylesheets/header.css') {
+      theme2.setAttribute('href', 'stylesheets/header-teacher.css');
+      localStorage.setItem('themeData', '1');
+  } else {
+      theme2.setAttribute('href', 'stylesheets/header.css');
+      localStorage.setItem('themeData', '0');
+  }
+}
+
 function toggleTheme() {
   // Obtains an array of all <link>
   // elements.
@@ -39,6 +57,7 @@ function toggleTheme() {
   if (theme2.getAttribute('href') == '../stylesheets/header.css') {
       theme2.setAttribute('href', '../stylesheets/header-teacher.css');
       localStorage.setItem('themeData', '1');
+
   } else {
       theme2.setAttribute('href', '../stylesheets/header.css');
       localStorage.setItem('themeData', '0');
@@ -85,21 +104,6 @@ function mainToggleMode() {
   }
 }
 
-function mainToggleTheme() {
-  console.log(2);
-  // Obtains an array of all <link>
-  // elements.
-  // Select your element using indexing.
-  var theme2 = document.getElementsByTagName('link')[1];
-
-  // Change the value of href attribute 
-  // to change the css sheet.
-  if (theme2.getAttribute('href') == 'stylesheets/header.css') {
-      theme2.setAttribute('href', 'stylesheets/header-teacher.css');
-  } else {
-      theme2.setAttribute('href', 'stylesheets/header.css');
-  }
-}
 
 function darkmodeData() {
   var dData = localStorage.getItem('darkData');
@@ -112,6 +116,22 @@ function mainDarkmodeData() {
   var dData = localStorage.getItem('darkData');
   if (dData == '1'){
     mainToggleMode();
+  }
+}
+
+function themeChangeData(){
+  var tData = localStorage.getItem('themeData');
+  if(tData == '1'){
+    toggleTheme();
+    console.log("1");
+  }
+}
+
+function mainChangeData(){
+  var tData = localStorage.getItem('themeData');
+  if(tData == '1'){
+    mainToggleTheme();
+    console.log("2")
   }
 }
 
