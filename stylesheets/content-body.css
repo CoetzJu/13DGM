@@ -252,4 +252,18 @@
 
 .about-us{
   margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+
+.copyright{
+  margin-top: 2.5%;
+  margin-bottom: 1.5%;
+}
+
+#about-us-align{
+  margin-left: 25%;
+  text-align: center;
+  font-size: 1.2em;
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 50%;
 }

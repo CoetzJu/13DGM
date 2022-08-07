@@ -123,6 +123,7 @@ function themeChangeData(){
   var tData = localStorage.getItem('themeData');
   if(tData == '1'){
     toggleTheme();
+    textSwap();
     console.log("1");
   }
 }
@@ -132,6 +133,16 @@ function mainChangeData(){
   if(tData == '1'){
     mainToggleTheme();
     console.log("2")
+  }
+}
+
+function textSwap() {
+  var x = document.getElementById("text-swap");
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "Swapped text!";
+    console.log("sufhiushfiuhf");
+  } else {
+    x.innerHTML = "Hello";
   }
 }
 
