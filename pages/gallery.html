@@ -60,124 +60,127 @@
 
     </div>
 
-    <div class="high-profile">
-        <!--This is where the high profile things are. Like slideshows, sign-up and quick lists-->
-        <!--This will be handled by the body stylesheet-->
-
-        <div class="quick-list">
-
-            <p class="quick-list-data">1</p>
-            <p class="quick-list-data">2</p>
-            <p class="quick-list-data">3</p>
-            <p class="quick-list-data">4</p>
-            <p class="quick-list-data">5</p>
-            <p class="quick-list-data">6</p>
-            <p class="quick-list-data">7</p>
-
-        </div>
-
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <img src="../images/processed/slideshow/Car.png" style="width:100%">
-          </div>
-
-          <div class="mySlides fade">
-            <img src="../images/processed/slideshow/Name.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides fade">
-            <img src="../images/processed/slideshow/Smile.jpg" style="width:100%">
-          </div>
-
-          <!-- Next and previous buttons
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-        </div>
-        
-
-        <!-- The dots/circles
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div> -->
-
-        <script>
-            var slideIndex = 0;
-            carousel();
-            function carousel() {
-                var i;
-                var slideDeck = document.getElementsByClassName("mySlides");
-                for (i = 0; i < slideDeck.length; i++) {
-                    slideDeck[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > slideDeck.length) {slideIndex = 1}
-                slideDeck[slideIndex-1].style.display = "block";
-                setTimeout(carousel, 2000); // Change image every 2 seconds
-                console.log(slideDeck);
-            }
-        </script>
-
-        <div id="sign-up">
-
-            <a id="hyperlink-color" href="#"><p class="centered-image-text" id="sign-up-text">Sign-Up Now!</p></a>
-            <a href="#"><img id="image" style="width: 100%;" src="../images/processed/content/Join.jpg"></a>
-
-         </div>
-
-    </div>
-
-    <div class="low-profile">
-        <!--This is where all the main content will be. This includes text and images.-->
-        <!--This is handled with the body stylesheet-->
-        <!--https://www.w3schools.com/html/html_tables.asp-->
+    <div class="gallery">
 
         <div id="header">
 
             <!--Make new ID for this-->
-            <p id="header-content">Lessons</p>
+            <p id="header-content">Gallery</p>
 
         </div>
 
-        <div id="content-layout">
+        <div class="image-container">
 
-            <div id="content-sizing">
-                <img>
-            </div>
-
-            <div id="content-sizing">
-                <p></p>
-            </div>
-
-            <div id="content-sizing">
-                <img>
-            </div>
-
-            <div id="content-sizing">
-                <p></p>
-            </div>
-
-            <div id="content-sizing">
-                <img>
-            </div>
-
-            <div id="content-sizing">
-                <p></p>
-            </div>
+            <img src="../images/processed/content/Box.jpg">
+            
+            <p>
+                This image belongs to the BBC and the photo can be found <a href="https://www.flickr.com/photos/adafruit/34175872974/in/photostream/">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
 
         </div>
-        <!-- Table template
-            <table>
-            <tr>
-                <th><img src="../images/processed/content/Join.jpg" alt=""></th>
-                <th><p>soigjrdjdogijodijgoidjgoidjfoisdjgoisj</p></th>
-            </tr>
-        </table>-->
+
+        <div class="image-container">
+
+            <img src="../images/processed/content/cat.jpg">
+            
+            <p>
+                This image belongs to the Pi Supply and the photo can be found <a href="https://www.flickr.com/photos/adafruit/49169313233">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/content/Join.jpg">
+            
+            <p>
+                This image belongs the Aruld and the photo can be found <a href="https://commons.wikimedia.org/wiki/File:BBC_Micro_Bit_with_original_Packaging.jpg">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/content/microbitGND.png">
+            
+            <p>
+                This image belongs to Gareth Halfacree and the photo can be found <a href="https://commons.m.wikimedia.org/wiki/File:BBC_micro_bit_(25965958770).png">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/content/microbit3V.png">
+            
+            <p>
+                This image belongs to Gareth Halfacree and the photo can be found <a href="https://commons.wikimedia.org/wiki/File:BBC_micro_bit_(26146399942).png">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/icons/Moon-icon.png">
+            
+            <p>
+                This image belongs to Alessio Atzeni and the photo can be found <a href="https://www.iconfinder.com/icons/110831/moon_icon">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/icons/Student-Icon.png">
+            
+            <p>
+                This image belongs to the Iconfinder and the photo can be found <a href="https://www.iconfinder.com/icons/9025060/student_light_icon">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="image-container">
+
+            <img src="../images/processed/icons/Teacher-Icon.png">
+            
+            <p>
+                This image belongs to the Iconfinder and the photo can be found <a href="https://www.iconfinder.com/icons/6570720/doctor_lecturer_man_professor_teacher_teaching_icon">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="large-image-container">
+
+            <img src="../images/processed/slideshow/Car.png">
+            
+            <p>
+                This image belongs to Gareth Halfacree and the photo can be found <a href="https://commons.wikimedia.org/wiki/File:GiggleBot_(45226565091).png">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="large-image-container">
+
+            <img src="../images/processed/slideshow/Name.jpg">
+            
+            <p>
+                This image belongs to Ravi Kotecha and the photo can be found <a href="https://commons.wikimedia.org/wiki/File:BBC_Microbit.jpg">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
+        <div class="large-image-container">
+
+            <img src="../images/processed/slideshow/Smile.jpg">
+            
+            <p style="padding-bottom: 10%;">
+                This image belongs to Kaethe17 and the photo can be found <a href="https://commons.wikimedia.org/wiki/File:Bbc-microbit-2021.jpg">here</a>. This follows the <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International</a>
+            </p>
+
+        </div>
+
 
     </div>
-</body>
+
+</body> 
 </html>
