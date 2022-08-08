@@ -198,7 +198,7 @@
 
 .image{
     width: 15%;
-    height: 88%;
+    height: auto;
     border-style: solid;
     border-width: 0.1em;
     border-color: grey;
@@ -228,4 +228,9 @@
     text-align: center;
     font-size: 1.2em;
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image-resize{
+  width: 100%;
+  height: auto;
 }

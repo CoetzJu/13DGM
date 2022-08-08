@@ -200,7 +200,7 @@
   */
 }
 
-#image{
+.image{
   width: 15%;
   height: 88%;
   border-style: solid;
@@ -293,4 +293,8 @@
   font-size: 1.2em;
   max-width: 60%;
   font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#content-table{
+  width: 56%;
 }
