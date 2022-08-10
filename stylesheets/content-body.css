@@ -29,6 +29,7 @@
   float: left;
   box-sizing: border-box;
   margin: 0.5% 0.5%;
+  overflow: hidden;
 }
 
 .quick-list-data{
@@ -229,9 +230,7 @@
   box-sizing: border-box;
   margin: 0.5% 0.5%;
 
-  text-align: center;
-  font-size: 1.2em;
-  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 /* ASK MR JESSOP ABOUT USING MULTIPLE CLASSES AT THE SAME TIME*/
@@ -296,5 +295,9 @@
 }
 
 #content-table{
+  margin-left: 27%;
   width: 56%;
+  text-align: center;
+  font-family:  Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
 }
